@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Trang chủ</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="./Resource/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="./Resource/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <style>
+      .area_promotion{
+        display: block;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        position: relative;
+        background: #fff;
+        padding-bottom: 10px;
+      }
+      .boxcustom2{
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-left: transparent;
+        border-right: transparent;
+        position: relative;
+        padding-bottom: 10px;
+      }
+      .boxcustom{
+        margin: 4px;
+        padding: 1px;
+      }
+      .price{
+          color: red;
+          font-weight: bold;
+      }
+      .textblack{
+          color: black;
+      }
+      .discount{
+        float: right;
+        text-align: left; 
+        width: 50px; 
+        margin-top: 5px; 
+        background-color: red; 
+        color: white; 
+        padding: 5px;
+      }
+  </style>
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand-md navbar-light navbar-light">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand">
+        <img src="./Resource/image/shoplg.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+             style="opacity: .8">
+        <span class="brand-text font-weight-light">Tên cửa hàng</span>
+      </a>
+      
+      <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+            <div class="col-sm-9">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Xe chính hãng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Phụ kiện</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Xe mới về</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Khuyến mại</a>
+                    </li>
+                </ul>
+            </div>
+        
+        <!-- SEARCH FORM -->
+        <form class="form-inline ml-0 ml-md-3">
+          <div class="input-group input-group-sm">
+            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" onkeypress="return pressenter(event)">
+            <div class="input-group-append">
+              <button class="btn btn-navbar" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right navbar links -->
+      <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+        <!-- Giỏ hàng -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="./Resource/image/stock/mobie1.png" alt="User Avatar" class="img-size-50 mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Phụ kiện 1
+                  </h3>
+                  <p class="text-sm">Phụ kiện</p>
+                  <p class="text-sm text-muted"><i class="fa fa-shopping-bag mr-1"></i> 100.000đ</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="./Resource/image/stock/mobie2.png" alt="User Avatar" class="img-size-50 mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Phụ kiện 2
+                  </h3>
+                  <p class="text-sm">Phụ kiện</p>
+                  <p class="text-sm text-muted"><i class="fa fa-shopping-bag mr-1"></i> 1.000.000đ</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="./Resource/image/stock/mobie3.png" alt="User Avatar" class="img-size-50 mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Phụ kiện 3
+                  </h3>
+                  <p class="text-sm">Phụ kiện</p>
+                  <p class="text-sm text-muted"><i class="fa fa-shopping-bag mr-1"></i> 800.000đ</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="./shoppingcart.html" class="dropdown-item dropdown-footer">Xem giỏ hàng</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                  <h3>Miếng dán chống nước gương chiếu hậu xe hơi</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-2">
+                        <div class="col-sm-4">
+                            <img class="img-fluid pad" src="./Resource/image/stock/mobie6.png" alt="Photo">
+                        </div>
+        
+                        <div class="col-sm-4">
+                            <!-- Giá bán -->
+                            <div class="row boxcustom">
+                              <h3 class="price">10.000.000đ</h3>
+                            </div>
+                            <!-- Thông tin -->
+                            <div class="row boxcustom">
+                                <div class="area_promotion">
+                                    <strong class="boxcustom">KHUYẾN MẠI</strong>
+                                    <div class="boxcustom">
+                                        Giảm ngay 500.000đ (đã trừ vào giá)
+                                    </div>
+                                    <div class="boxcustom">
+                                        Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row boxcustom">
+                                <img class="img-fluid pad" src="./Resource/image/banner/banner6398x110.png" alt="Photo">
+                            </div>
+                            <div class="row boxcustom">
+                                <a type="button" class="btn btn-block btn-success" href="./shoppingcart.html">
+                                    <strong>THÊM VÀO GIỎ HÀNG</strong> 
+                                    <h6>
+                                        (Giao hàng tận nơi)
+                                    </h6>
+                                  </a>
+                            </div>
+                            <div class="boxcustom text-lg-center">
+                                <div>
+                                    <button style="margin-right: 5px;" type="button" class="btn btn-primary">
+                                        <strong>Trả góp 0%</strong> 
+                                        <h6>
+                                            (Thủ tục đơn giản)
+                                        </h6>
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        <strong>Trả góp qua thẻ</strong> 
+                                        <h6>
+                                            (Thẻ visa, master card)
+                                        </h6>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <img class="img-fluid pad" src="./Resource/image/banner/banner4800x300.png" alt="Photo">
+                            <img class="img-fluid pad" src="./Resource/image/banner/banner3800x300.png" alt="Photo">
+                            <img class="img-fluid pad" src="./Resource/image/banner/banner2800x300.png" alt="Photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-sm-8 col-lg-8">
+                            <div class="text-bold">
+                                Giới thiệu
+                            </div>
+                            <img class="img-fluid pad" src="./Resource/image/stock/detailmobie1.png" alt="Photo">
+                            <div class="text-bold">
+                              ƯU ĐIỂM CỦA MIẾNG DÁN CHỐNG NƯỚC GƯƠNG CHIẾU HẬU CHO XE HƠI !
+                            </div>
+                            <div class="text-black-50">
+                              – Với miếng dán gương kính chống nước có thể dùng cho mọi loại xe ô tô hoặc xe máy.
+                              – Hiệu quả chống nước hoàn hảo, giúp bạn quan sát gương dưới trời mưa, đảm bảo tầm nhìn của người lái xe luôn rõ nét dưới mưa và ban đêm cả khi di chuyển ở tốc độ cao giúp bạn lái xe an toàn tuyệt đối.
+                              – Giúp chống bám nước kính chiếu hậu tuyệt đối, tăng cường độ sáng cho gương
+                              – Giúp chống nước giúp gương không bị làm mờ khi gặp trời mưa, tài xế dễ quan sát tránh được những rủi ro không đáng có xảy ra.
+                              – Giúp giảm thiểu ánh sáng chói lóa từ các phương tiện tham gia giao thông khác từ phía sau, tài xế tăng khả năng quan sát tốt hơn.
+                            </div>
+                            <img class="img-fluid pad" src="./Resource/image/stock/detailmobie2.png" alt="Photo">
+                            <div class="text-black-50">
+                              ĐẶC ĐIỂM NỔI BẬT CỦA MIẾNG DÁN GƯƠNG CHO XE HƠI !    
+                            </div>
+                            <div class="text-black-50">
+                              Khi trời mưa, mặt gương chiếu hậu của xế hộp sẽ bị nhòe, khiến bạn khó quan sát đường để xử lý tình huống. Miếng dán gương chống nước sẽ giúp cải thiện hoàn hảo cho xế yêu của bạn.
+
+                              – Màu sắc: Bộ miếng dán gương chống nước có màu trắng, được thiết kế nhỏ gọn, phù hợp với các loại gương xe khác nhau.
+
+                              – Chất liệu: Với độ bền cao của chất keo 3M được gắn trực tiếp, bám chắc chắn vào bề mặt gương, nên bạn có thể hoàn toàn yên tâm không lo bong tróc trong quá trình sử dụng.    
+                            </div>
+                            <img class="img-fluid pad" src="./Resource/image/stock/detailmobie3.png" alt="Photo">
+                        </div>
+                        <div class="col-sm-4 col-lg-4">
+                            <strong class="boxcustom">Thông số kỹ thuật</strong> 
+                            <div class="row boxcustom2">
+                                <div class="col-4">Thương hiệu:</div>
+                                <div class="col-8">OEM</div>
+                            </div>
+                            <div class="row boxcustom2">
+                                <div class="col-4">Xuất xứ thương hiệu: </div>
+                                <div class="col-8">Dài loan</div>
+                            </div>
+                            <div class="row boxcustom2">
+                                <div class="col-4">Kích thước:</div>
+                                <div class="col-8">	1400 x 1500mm</div>
+                            </div>
+                            <div class="row boxcustom2">
+                                <div class="col-4">SKU</div>
+                                <div class="col-8">7355493427098</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <!-- Điện thoại mới -->
+            <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title"><b>KHUYẾN MẠI HOT NHẤT</b></h5>
+                  <p class="card-text">
+                    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner" id="table2">
+
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </p>
+              </div>
+            </div>
+
+            <!-- Điện thoại nổi bật -->
+            <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title"><b>ĐIỆN THOẠI NỔI BẬT NHẤT</b></h5>
+                  <p class="card-text">
+                      <div class="row mb-2" id="table1">
+                      </div>
+                  </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <!-- To the right -->
+      <div class="row">
+          <div class="col-4">
+              <strong>Thông tin liên hệ</strong>
+              <div class="row">
+                  <div class="col-4"> Gọi khiếu nại</div>
+                  <div class="col-8">	1800.1062 (8:00 - 21:30)</div>
+              </div>
+              <div class="row">
+                  <div class="col-4"> Gọi bảo hành</div>
+                  <div class="col-8">	1800.1062 (8:00 - 21:30)</div>
+              </div>
+              <div class="row">
+                  <div class="col-4"> Kỹ thuật </div>
+                  <div class="col-8">	1800.1763 (7:30 - 22:00)</div>
+              </div>
+          </div>
+          <div class="col-4">
+              <strong>Các thông tin khác</strong>
+              <div class="row">
+                  <div class="col-6">
+                      <a href="#" class="d-block">Chính sách đổi trả</a>
+                      <a href="#" class="d-block">Chính sách bảo hành</a>
+                      <a href="#" class="d-block">Chính sách ưu đãu</a>
+                      <a href="#" class="d-block">Thôn tin khuyến mại</a>
+                  </div>
+                  <div class="col-5">
+                      <a href="#" class="d-block">Bảo mật thôn tin</a>
+                      <a href="#" class="d-block">Giới thiệu</a>
+                      <a href="#" class="d-block">Khách hàng</a>
+                      <a href="#" class="d-block">Đối tác</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-4">
+              <strong>Xác nhận</strong>
+              <div class="row">
+                  <img class="img-fluid pad" style="width: 20%; height: auto;" src="./Resource/image/logo1.png" alt="Photo">
+              </div>
+          </div>
+      </div> 
+    </div>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="./Resource/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="./Resource/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="./Resource/dist/js/adminlte.min.js"></script>
+<script>
+  $(window).on('load', function() {
+    var detailurl = "./detail.html";
+    var text = "";
+    var i;
+    for (i = 1; i <= 8; i++) {
+      text += `<div class="col-md-3 col-sm-6 col-12">
+                <div class="card card-widget">
+                    <!-- /.card-header -->
+                    <div style="overflow: auto;">
+                      <div class="discount"> `+i+`0% </div>
+                    </div>
+                    <div class="card-body">
+                      <img class="img-fluid pad" src="./Resource/image/stock/mobie`+i+`.png" alt="Photo">
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer" style="color: black;">
+                        <a href="`+detailurl+`">
+                        <h3 class="textblack"> Phụ kiện `+i+`</h3>
+                        <h6 class="textkm"></h6>
+                        <div class="price"><strong>6.990.000₫</strong></div>
+                        
+                        <div class="promo noimage textblack">
+                                <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                        </div>
+                        <n></n>
+                    </div>
+                </div>
+            </div>`;
+    }
+
+    var text2 = "";
+    var j;
+    for (j = 1; j <= 8; j=j+4) {
+      if(j == 1){
+        text2 += `<div class="carousel-item active">
+                  <div class="row mb-2">
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                          <div style="overflow: auto;">
+                            <div class="discount"> `+j+`0% </div>
+                          </div>
+                          <div class="card-body">
+                            <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j)+`.png" alt="Photo">
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer" style="color: black;">
+                              <a href="`+detailurl+`">
+                              <h3 class="textblack"> Phụ kiện `+(j)+`</h3>
+                              <h6 class="textkm"></h6>
+                              <div class="price"><strong>6.990.000₫</strong></div>
+                              
+                              <div class="promo noimage textblack">
+                                      <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                              </div>
+                              <n></n>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                        <div style="overflow: auto;">
+                          <div class="discount"> `+j+`0% </div>
+                        </div>
+                        <div class="card-body">
+                          <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+1)+`.png" alt="Photo">
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer" style="color: black;">
+                            <a href="`+detailurl+`">
+                            <h3 class="textblack">Phụ kiện `+(j+1)+`9</h3>
+                            <h6 class="textkm"></h6>
+                            <div class="price"><strong>6.990.000₫</strong></div>
+                            
+                            <div class="promo noimage textblack">
+                                    <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                            </div>
+                            <n></n>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                        <div style="overflow: auto;">
+                          <div class="discount"> `+j+`0% </div>
+                        </div>
+                        <div class="card-body">
+                          <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+2)+`.png" alt="Photo">
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer" style="color: black;">
+                            <a href="`+detailurl+`">
+                            <h3 class="textblack">Phụ kiện `+(j+2)+`9</h3>
+                            <h6 class="textkm"></h6>
+                            <div class="price"><strong>6.990.000₫</strong></div>
+                            
+                            <div class="promo noimage textblack">
+                                    <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                            </div>
+                            <n></n>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                        <div style="overflow: auto;">
+                          <div class="discount"> `+j+`0% </div>
+                        </div>
+                        <div class="card-body">
+                          <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+3)+`.png" alt="Photo">
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer" style="color: black;">
+                            <a href="`+detailurl+`">
+                            <h3 class="textblack">Phụ kiện `+(j+3)+`9</h3>
+                            <h6 class="textkm"></h6>
+                            <div class="price"><strong>6.990.000₫</strong></div>
+                            
+                            <div class="promo noimage textblack">
+                                    <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                            </div>
+                            <n></n>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>`;
+        continue;
+      }
+      text2 += `<div class="carousel-item">
+                  <div class="row mb-2">
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                          <!-- /.card-header -->
+                          <div style="overflow: auto;">
+                            <div class="discount"> `+j+`0% </div>
+                          </div>
+                          <div class="card-body">
+                            <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j)+`.png" alt="Photo">
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer" style="color: black;">
+                              <a href="`+detailurl+`">
+                              <h3 class="textblack">Phụ kiện `+(j)+`9</h3>
+                              <h6 class="textkm"></h6>
+                              <div class="price"><strong>6.990.000₫</strong></div>
+                              
+                              <div class="promo noimage textblack">
+                                      <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                              </div>
+                              <n></n>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                          <!-- /.card-header -->
+                          <div style="overflow: auto;">
+                            <div class="discount"> `+j+`0% </div>
+                          </div>
+                          <div class="card-body">
+                            <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+1)+`.png" alt="Photo">
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer" style="color: black;">
+                              <a href="`+detailurl+`">
+                              <h3 class="textblack">Phụ kiện `+(j+1)+`9</h3>
+                              <h6 class="textkm"></h6>
+                              <div class="price"><strong>6.990.000₫</strong></div>
+                              
+                              <div class="promo noimage textblack">
+                                      <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                              </div>
+                              <n></n>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                          <!-- /.card-header -->
+                          <div style="overflow: auto;">
+                            <div class="discount"> `+j+`0% </div>
+                          </div>
+                          <div class="card-body">
+                            <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+2)+`.png" alt="Photo">
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer" style="color: black;">
+                              <a href="`+detailurl+`">
+                              <h3 class="textblack">Phụ kiện `+(j+2)+`9</h3>
+                              <h6 class="textkm"></h6>
+                              <div class="price"><strong>6.990.000₫</strong></div>
+                              
+                              <div class="promo noimage textblack">
+                                      <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                              </div>
+                              <n></n>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                          <!-- /.card-header -->
+                          <div style="overflow: auto;">
+                            <div class="discount"> `+j+`0% </div>
+                          </div>
+                          <div class="card-body">
+                            <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+3)+`.png" alt="Photo">
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer" style="color: black;">
+                              <a href="`+detailurl+`">
+                              <h3 class="textblack">Phụ kiện `+(j+3)+`9</h3>
+                              <h6 class="textkm"></h6>
+                              <div class="price"><strong>6.990.000₫</strong></div>
+                              
+                              <div class="promo noimage textblack">
+                                      <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                              </div>
+                              <n></n>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>`;
+    }
+    $('#table1').html(text);
+    $('#table2').append(text2)
+    $('#table3').append(text2)
+  });
+
+  $(window).on('load', function() {
+    var detailurl = "./detail.html";
+    var text = "";
+    var i;
+    for (i = 1; i <= 8; i++) {
+      text += `<div class="col-md-3 col-sm-6 col-12">
+                <div class="card card-widget">
+                    <!-- /.card-header -->
+                    <div style="overflow: auto;">
+                      <div class="discount"> `+i+`0% </div>
+                    </div>
+                    <div class="card-body">
+                      <img class="img-fluid pad" src="./Resource/image/stock/mobie`+i+`.png" alt="Photo">
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer" style="color: black;">
+                        <a href="`+detailurl+`">
+                        <h3 class="textblack">OPPO Phụ kiện `+i+`</h3>
+                        <h6 class="textkm"></h6>
+                        <div class="price"><strong>6.990.000₫</strong></div>
+                        
+                        <div class="promo noimage textblack">
+                                <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                        </div>
+                        <n></n>
+                    </div>
+                </div>
+            </div>`;
+    }
+
+    var text2 = "";
+    var j;
+    for (j = 1; j <= 8; j=j+4) {
+      if(j == 1){
+        text2 += `<div class="carousel-item active">
+                  <div class="row mb-2">
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                          <div style="overflow: auto;">
+                            <div class="discount"> `+j+`0% </div>
+                          </div>
+                          <div class="card-body">
+                            <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j)+`.png" alt="Photo">
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer" style="color: black;">
+                              <a href="`+detailurl+`">
+                              <h3 class="textblack"> Phụ kiện `+(j)+`</h3>
+                              <h6 class="textkm"></h6>
+                              <div class="price"><strong>6.990.000₫</strong></div>
+                              
+                              <div class="promo noimage textblack">
+                                      <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                              </div>
+                              <n></n>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                        <div style="overflow: auto;">
+                          <div class="discount"> `+j+`0% </div>
+                        </div>
+                        <div class="card-body">
+                          <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+1)+`.png" alt="Photo">
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer" style="color: black;">
+                            <a href="`+detailurl+`">
+                            <h3 class="textblack">Phụ kiện `+(j+1)+`9</h3>
+                            <h6 class="textkm"></h6>
+                            <div class="price"><strong>6.990.000₫</strong></div>
+                            
+                            <div class="promo noimage textblack">
+                                    <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                            </div>
+                            <n></n>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                        <div style="overflow: auto;">
+                          <div class="discount"> `+j+`0% </div>
+                        </div>
+                        <div class="card-body">
+                          <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+2)+`.png" alt="Photo">
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer" style="color: black;">
+                            <a href="`+detailurl+`">
+                            <h3 class="textblack">Phụ kiện `+(j+2)+`9</h3>
+                            <h6 class="textkm"></h6>
+                            <div class="price"><strong>6.990.000₫</strong></div>
+                            
+                            <div class="promo noimage textblack">
+                                    <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                            </div>
+                            <n></n>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                        <div style="overflow: auto;">
+                          <div class="discount"> `+j+`0% </div>
+                        </div>
+                        <div class="card-body">
+                          <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+3)+`.png" alt="Photo">
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer" style="color: black;">
+                            <a href="`+detailurl+`">
+                            <h3 class="textblack">Phụ kiện `+(j+3)+`9</h3>
+                            <h6 class="textkm"></h6>
+                            <div class="price"><strong>6.990.000₫</strong></div>
+                            
+                            <div class="promo noimage textblack">
+                                    <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                            </div>
+                            <n></n>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>`;
+        continue;
+      }
+      text2 += `<div class="carousel-item">
+                  <div class="row mb-2">
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                          <!-- /.card-header -->
+                          <div style="overflow: auto;">
+                            <div class="discount"> `+j+`0% </div>
+                          </div>
+                          <div class="card-body">
+                            <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j)+`.png" alt="Photo">
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer" style="color: black;">
+                              <a href="`+detailurl+`">
+                              <h3 class="textblack">Phụ kiện `+(j)+`9</h3>
+                              <h6 class="textkm"></h6>
+                              <div class="price"><strong>6.990.000₫</strong></div>
+                              
+                              <div class="promo noimage textblack">
+                                      <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                              </div>
+                              <n></n>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                          <!-- /.card-header -->
+                          <div style="overflow: auto;">
+                            <div class="discount"> `+j+`0% </div>
+                          </div>
+                          <div class="card-body">
+                            <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+1)+`.png" alt="Photo">
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer" style="color: black;">
+                              <a href="`+detailurl+`">
+                              <h3 class="textblack">Phụ kiện `+(j+1)+`9</h3>
+                              <h6 class="textkm"></h6>
+                              <div class="price"><strong>6.990.000₫</strong></div>
+                              
+                              <div class="promo noimage textblack">
+                                      <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                              </div>
+                              <n></n>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                          <!-- /.card-header -->
+                          <div style="overflow: auto;">
+                            <div class="discount"> `+j+`0% </div>
+                          </div>
+                          <div class="card-body">
+                            <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+2)+`.png" alt="Photo">
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer" style="color: black;">
+                              <a href="`+detailurl+`">
+                              <h3 class="textblack">Phụ kiện `+(j+2)+`9</h3>
+                              <h6 class="textkm"></h6>
+                              <div class="price"><strong>6.990.000₫</strong></div>
+                              
+                              <div class="promo noimage textblack">
+                                      <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                              </div>
+                              <n></n>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                      <div class="card card-widget">
+                          <!-- /.card-header -->
+                          <div style="overflow: auto;">
+                            <div class="discount"> `+j+`0% </div>
+                          </div>
+                          <div class="card-body">
+                            <img class="img-fluid pad" src="./Resource/image/stock/mobie`+(j+3)+`.png" alt="Photo">
+                          </div>
+                          <!-- /.card-body -->
+                          <div class="card-footer" style="color: black;">
+                              <a href="`+detailurl+`">
+                              <h3 class="textblack">Phụ kiện `+(j+3)+`9</h3>
+                              <h6 class="textkm"></h6>
+                              <div class="price"><strong>6.990.000₫</strong></div>
+                              
+                              <div class="promo noimage textblack">
+                                      <p> Tặng gói hỗ trợ kỹ thuật (không áp dụng thêm khuyến mãi khác)</p>
+                              </div>
+                              <n></n>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>`;
+    }
+    $('#table1').html(text);
+    $('#table2').append(text2)
+    $('#table3').append(text2)
+  });
+  
+  function pressenter(e){
+    if (e.keyCode == 13) {
+      console.log("test")
+      location.replace("./find.html")
+      return false;
+    }
+  }
+</script>
+</body>
+</html>
